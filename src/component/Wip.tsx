@@ -1,4 +1,4 @@
-import { Typography, CircularProgress, Box } from "@mui/material";
+import { Box, CircularProgress, Typography } from "@mui/material";
 
 function Wip() {
   return (

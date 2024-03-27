@@ -1,4 +1,4 @@
-import { Typography, Rating as Base } from "@mui/material";
+import { Rating as Base, Typography } from "@mui/material";
 
 export default function Rating({
   legend,

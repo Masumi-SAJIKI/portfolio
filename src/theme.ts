@@ -1,12 +1,13 @@
-import { createTheme, PaletteMode } from "@mui/material";
-export const theme = (mode?: PaletteMode) => {
+import { createTheme as createBase, PaletteMode, Theme } from "@mui/material";
+
+export const createTheme = (mode?: PaletteMode): Theme => {
   if (mode === "dark") {
     return darkTheme;
   }
   return lightTheme;
 };
 
-const lightTheme = createTheme({
+const lightTheme = createBase({
   palette: {
     mode: "light",
     background: {
@@ -42,7 +43,7 @@ const lightTheme = createTheme({
   },
 });
 
-const darkTheme = createTheme({
+const darkTheme = createBase({
   palette: {
     mode: "dark",
     background: {

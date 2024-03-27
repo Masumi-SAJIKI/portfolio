@@ -1,16 +1,16 @@
 import { useEffect, useState } from "react";
 import {
-  Typography,
-  Grid,
+  Box,
+  Container,
   Divider,
+  Grid,
+  Typography,
   useMediaQuery,
   useTheme,
-  Container,
-  Box,
 } from "@mui/material";
-import Rating from "./Rating";
 import { ModeSwitch } from "./ModeSwitch";
-import Main from "./Main";
+import Rating from "./Rating";
+import Main from "./Top";
 import Wip from "./Wip";
 
 interface Props {
