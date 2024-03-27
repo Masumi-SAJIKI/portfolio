@@ -3,7 +3,6 @@ import { Fade, Box, ThemeProvider, CssBaseline } from "@mui/material";
 import { Progress } from "./component/Progress";
 import Main from "./component/Main";
 import { theme } from "./theme";
-import "./firebase";
 import Development from "./component/Development";
 
 export default function App() {
