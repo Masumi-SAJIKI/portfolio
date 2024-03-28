@@ -1,9 +1,6 @@
 import { useCallback, useMemo } from "react";
 import { useTranslation } from "react-i18next";
-import OtherIcon from "@mui/icons-material/Devices";
 import GTranslateIcon from "@mui/icons-material/GTranslate";
-import ProgrammingIcon from "@mui/icons-material/Language";
-import InfraIcon from "@mui/icons-material/Storage";
 import {
   Avatar,
   Box,
@@ -23,7 +20,6 @@ import i18next from "i18next";
 import History from "component/History";
 import ModeSwitch from "component/ModeSwitch";
 import ReleaseNote from "component/ReleaseNote";
-import SkillCard from "component/SkillCard";
 import Title from "component/Title";
 import WindowCard from "component/WindowCard";
 
@@ -194,60 +190,9 @@ export default function Top({ mode, onChangeMode }: Props) {
         <Grid item container spacing={1} mb={4}>
           <Grid item xs={12} sm={4}>
             <WindowCard width="100%" color="secondary">
-              <SkillCard
-                title={t("skill.programming")}
-                icon={<ProgrammingIcon />}
-                skills={[
-                  { name: "C#", rating: 1, description: "" },
-                  { name: "HTML/CSS", rating: 3, description: "" },
-                  { name: "Bootstrap", rating: 2, description: "" },
-                  { name: "TypeScript", rating: 3, description: "歴3年ほど" },
-                  { name: "React", rating: 4, description: "" },
-                  {
-                    name: "PHP/Laravel",
-                    rating: 3,
-                    description: "Restful API実装経験あり",
-                  },
-                  {
-                    name: "Java",
-                    rating: 2,
-                    description: "Spring boot利用経験あり",
-                  },
-                ]}
-              />
-            </WindowCard>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <WindowCard width="100%" color="secondary">
-              <SkillCard
-                title={t("skill.infra")}
-                icon={<InfraIcon />}
-                skills={[
-                  { name: "AWS", rating: 1, description: "" },
-                  { name: "NGINX", rating: 1, description: "" },
-                  { name: "Docker", rating: 1, description: "" },
-                  { name: "MySQL/MariaDB", rating: 3, description: "" },
-                  { name: "PostgreSQL", rating: 2, description: "" },
-                ]}
-              />
-            </WindowCard>
-          </Grid>
-          <Grid item xs={12} sm={4}>
-            <WindowCard width="100%" color="secondary">
-              <SkillCard
-                title={t("skill.other")}
-                icon={<OtherIcon />}
-                skills={[
-                  {
-                    name: "Firebase",
-                    rating: 3,
-                    description: "Reactアプリでの利用経験",
-                  },
-                  { name: "Excel", rating: 3, description: "" },
-                  { name: "Git", rating: 3, description: "" },
-                  { name: "Backlog,Jira", rating: 3, description: "" },
-                ]}
-              />
+              <Box p={5} textAlign="center">
+                工事中...
+              </Box>
             </WindowCard>
           </Grid>
         </Grid>
