@@ -262,11 +262,7 @@ function Development({ mode, onChangeMode, onChangePageMode }: Props) {
         <Typography variant="h4">ページプレビュー</Typography>
       </Grid>
       <Divider sx={{ my: 2 }} />
-      <Main
-        mode={mode}
-        onChangeMode={onChangeMode}
-        onChangePageMode={onChangePageMode}
-      />
+      <Main mode={mode} onChangeMode={onChangeMode} />
     </Box>
   );
 }
