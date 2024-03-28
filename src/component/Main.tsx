@@ -1,14 +1,12 @@
 import { useEffect, useState } from "react";
 import { Box, Fade } from "@mui/material";
 import { useAtom } from "jotai";
-import { colorModeAtom } from "../globalstates/colorMode";
-import Development from "./Development";
-import { Progress } from "./Progress";
-import Top from "./Top";
+import { colorAtom } from "globalstate/theme";
+import { Progress } from "component/Progress";
+import Top from "component/Top";
 
 export default function Main() {
-  const [mode, setMode] = useAtom(colorModeAtom);
-  const [pageMode, setPageMode] = useState<"client" | "dev">("client");
+  const [mode, setMode] = useAtom(colorAtom);
   const [show, setShow] = useState(false);
   const [progress, setProgress] = useState(0);
 
@@ -29,28 +27,18 @@ export default function Main() {
   }, []);
 
   return (
-    <Box minHeight="100vh">
+    <Box>
       {!show && (
-        <Box maxHeight="100vh" overflow="hidden">
+        <Box>
           <Progress value={progress} variant="determinate" />
         </Box>
       )}
       <Fade in={show}>
-        <Box minHeight="100vh">
-          {pageMode === "dev" && (
-            <Development
-              mode={mode}
-              onChangeMode={() => setMode(mode === "light" ? "dark" : "light")}
-              onChangePageMode={(mode) => setPageMode(mode)}
-            />
-          )}
-          {pageMode === "client" && (
-            <Top
-              mode={mode}
-              onChangeMode={() => setMode(mode === "light" ? "dark" : "light")}
-              onChangePageMode={(mode) => setPageMode(mode)}
-            />
-          )}
+        <Box>
+          <Top
+            mode={mode}
+            onChangeMode={() => setMode(mode === "light" ? "dark" : "light")}
+          />
         </Box>
       </Fade>
     </Box>

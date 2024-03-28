@@ -1,4 +1,5 @@
 import react from "@vitejs/plugin-react";
+import * as path from "path";
 import { defineConfig } from "vite";
 
 // https://vitejs.dev/config/
@@ -15,6 +16,15 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+  },
+  resolve: {
+    alias: {
+      assets: path.resolve(__dirname, "src/assets"),
+      component: path.resolve(__dirname, "src/component"),
+      globalstate: path.resolve(__dirname, "src/globalstate"),
+      resources: path.resolve(__dirname, "src/resources"),
+      types: path.resolve(__dirname, "src/types"),
+    },
   },
   optimizeDeps: {
     include: ["@emotion/react", "@emotion/styled", "@mui/material/Tooltip"],

@@ -24,6 +24,7 @@ module.exports = {
     "import/no-duplicates": "error",
     "import/no-absolute-path": "error",
     "import/no-relative-packages": "error",
+    "import/no-relative-parent-imports": "error",
     "no-unused-vars": "off",
     "@typescript-eslint/no-unused-vars": ["error"],
     "react-refresh/only-export-components": [
@@ -50,8 +51,10 @@ module.exports = {
                 "^next",
                 "date-fns",
                 "^@?\\w",
+                "jotai",
                 "\\w*",
                 ".\\w",
+                "component/*",
               ],
             ],
           },

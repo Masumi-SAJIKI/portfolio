@@ -1,0 +1,23 @@
+{
+	"button": {
+		"change_lang": "to English"
+	},
+	"title": {
+		"author": "ごましおきなこの",
+		"portfolio": "ポートフォリオ"
+	},
+	"subtitle": {
+		"about_site": "このサイトについて",
+		"about_author": "自己紹介",
+		"contact": "お問い合わせ",
+		"skill": "スキル",
+		"release": "更新履歴"
+	},
+	"skill": {
+		"programming": "プログラミング言語",
+		"database": "データベース",
+		"infra": "インフラ技術",
+		"qualification": "資格",
+		"other": "その他"
+	}
+}

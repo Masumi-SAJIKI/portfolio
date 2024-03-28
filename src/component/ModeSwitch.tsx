@@ -1,7 +1,7 @@
 import { styled } from "@mui/material/styles";
 import Switch from "@mui/material/Switch";
 
-export const ModeSwitch = styled(Switch)(({ theme }) => ({
+const ModeSwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
   padding: 7,
@@ -19,7 +19,7 @@ export const ModeSwitch = styled(Switch)(({ theme }) => ({
       },
       "& + .MuiSwitch-track": {
         opacity: 1,
-        color: "red",
+        color: "#fff",
         backgroundColor: theme.palette.mode === "dark" ? "#8796A5" : "#aab4be",
       },
     },
@@ -49,3 +49,5 @@ export const ModeSwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
+
+export default ModeSwitch;

@@ -1,0 +1,23 @@
+{
+	"button": {
+		"change_lang": "日本語で表示する"
+	},
+	"title": {
+		"author": "Gomashio Kinako's",
+		"portfolio": "Portfolio"
+	},
+	"subtitle": {
+		"about_site": "About this site",
+		"about_author": "About author",
+		"contact": "Contact",
+		"skill": "Skills",
+		"release": "Release Note"
+	},
+	"skill": {
+		"programming": "programming",
+		"data": "data",
+		"infra": "infrastructure",
+		"qualification": "qualification",
+		"other": "other"
+	}
+}

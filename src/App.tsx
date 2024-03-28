@@ -1,12 +1,13 @@
 import { useMemo } from "react";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useAtom } from "jotai";
-import Main from "./component/Main";
-import { colorModeAtom } from "./globalstates/colorMode";
+import { colorAtom } from "globalstate/theme";
+import "./i18n";
 import { createTheme } from "./theme";
+import Main from "component/Main";
 
 export default function App() {
-  const [mode] = useAtom(colorModeAtom);
+  const [mode] = useAtom(colorAtom);
   const theme = useMemo(() => createTheme(mode), [mode]);
 
   return (

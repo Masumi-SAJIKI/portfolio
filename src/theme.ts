@@ -20,7 +20,7 @@ const lightTheme = createBase({
       main: "#f6bd60",
     },
     text: {
-      primary: "#184e77",
+      primary: "#452F27",
     },
   },
   components: {
