@@ -16,12 +16,21 @@ export default defineConfig({
   },
   build: {
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          analytics: ["firebase/app", "firebase/analytics", "web-vitals"],
+        },
+      },
+    },
   },
   resolve: {
     alias: {
+      api: path.resolve(__dirname, "src/api"),
       assets: path.resolve(__dirname, "src/assets"),
       component: path.resolve(__dirname, "src/component"),
       globalstate: path.resolve(__dirname, "src/globalstate"),
+      hook: path.resolve(__dirname, "src/hook"),
       resources: path.resolve(__dirname, "src/resources"),
       types: path.resolve(__dirname, "src/types"),
     },

@@ -16,7 +16,9 @@ import {
 } from "@mui/material";
 import GitHubIcon from "assets/github-mark.svg";
 import me from "assets/me.png";
+import { useCounter } from "hook/Counter";
 import i18next from "i18next";
+import Counter from "component/Counter";
 import History from "component/History";
 import ModeSwitch from "component/ModeSwitch";
 import ReleaseNote from "component/ReleaseNote";
@@ -32,6 +34,7 @@ export default function Top({ mode, onChangeMode }: Props) {
   const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const count = useCounter();
 
   const handleChangeLang = useCallback(() => {
     i18next.changeLanguage(i18next.language === "ja" ? "en" : "ja");
@@ -43,7 +46,6 @@ export default function Top({ mode, onChangeMode }: Props) {
     return 194;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isMobile, i18next.language]);
-
   const verLeftPosition = useMemo(() => {
     if (isMobile) return 250;
     if (i18next.language === "ja") return 500;
@@ -108,7 +110,7 @@ export default function Top({ mode, onChangeMode }: Props) {
             </>
           )}
         </Grid>
-        <Grid item xs={12} textAlign="center" mt={3} mb={5}>
+        <Grid item xs={12} textAlign="center" mt={2} mb={3}>
           <Typography variant="body1" component="div">
             とりあえずReactを書きたかったので作りました。
           </Typography>
@@ -230,6 +232,17 @@ export default function Top({ mode, onChangeMode }: Props) {
           </>
         )}
         <Grid item xs={12} textAlign="center" mt={1}>
+          <Typography variant="caption" component="div">
+            アクセスカウンター
+          </Typography>
+          <Counter count={count} />
+          <Typography variant="caption" component="div" color="GrayText">
+            リアルタイムでカウントしています。
+            {/* <br />
+            キリ番を踏んだらBBSにぜひ記念書き込みお願いします！ */}
+          </Typography>
+        </Grid>
+        <Grid item xs={12} textAlign="center" mt={3}>
           <Typography variant="caption">
             Copyright © 2014 ごましおきなこ All Rights Reserved.
           </Typography>
