@@ -19,7 +19,11 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          analytics: ["firebase/app", "firebase/analytics", "web-vitals"],
+          analytics: [
+            "firebase/app",
+            "firebase/analytics",
+            "firebase/firestore",
+          ],
         },
       },
     },
