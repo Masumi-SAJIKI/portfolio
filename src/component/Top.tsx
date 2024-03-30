@@ -205,6 +205,11 @@ export default function Top({ mode, onChangeMode }: Props) {
               <ReleaseNote
                 notes={[
                   {
+                    ver: "0.4.0",
+                    date: new Date("2024-03-30"),
+                    note: "アクセスカウンターを追加しました。FirebaseのonSnapshotを使ってリアルタイムで更新してみました。",
+                  },
+                  {
                     ver: "0.3.0",
                     date: new Date("2024-03-28"),
                     note: "全体的に書き換えました。多言語対応を追加。",
