@@ -24,5 +24,6 @@
 	"message": {
 		"welcome": "Welcome to my portfolio site!",
 		"used_language": "Used language"
-	}
+	},
+	"author": "ごましおきなこ(Gomashio Kinako)<br/><br/>I am an engineer born in Niigata, raised in Yamagata and Akita, and living in Sendai.<br/>I mainly develop and modify systems using React and Laravel."
 }
