@@ -1,4 +1,4 @@
-import { Trans, useTranslation } from "react-i18next";
+import { Trans } from "react-i18next";
 import {
   Avatar,
   Box,
@@ -15,7 +15,6 @@ import me from "assets/me.png";
 import History from "component/History";
 
 export default function Author() {
-  const { t } = useTranslation();
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 

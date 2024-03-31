@@ -19,7 +19,6 @@ import { useCounter } from "hook/Counter";
 import i18next from "i18next";
 import Author from "component/Author";
 import Counter from "component/Counter";
-import History from "component/History";
 import LanguageChangeButton from "component/LanguageChangeButton";
 import StyledCardContents from "component/ListCard";
 import ModeSwitch from "component/ModeSwitch";
