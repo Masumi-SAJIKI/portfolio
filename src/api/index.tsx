@@ -9,7 +9,10 @@ import {
 
 export const postCounter = async () => {
   const docRef = doc(collection(db, "access"));
-  await setDoc(docRef, { timestamp: serverTimestamp() });
+  await setDoc(docRef, {
+    userAgent: window.navigator.userAgent,
+    timestamp: serverTimestamp(),
+  });
 };
 
 export const getAccessCount = async () => {
