@@ -35,6 +35,7 @@ export default defineConfig({
       component: path.resolve(__dirname, "src/component"),
       globalstate: path.resolve(__dirname, "src/globalstate"),
       hook: path.resolve(__dirname, "src/hook"),
+      page: path.resolve(__dirname, "src/page"),
       resources: path.resolve(__dirname, "src/resources"),
       types: path.resolve(__dirname, "src/types"),
     },

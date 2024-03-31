@@ -3,9 +3,9 @@ import { CssBaseline, ThemeProvider } from "@mui/material";
 import { useAtom } from "jotai";
 import { postCounter } from "api";
 import { colorAtom } from "globalstate/theme";
+import Main from "page/Top/Main";
 import "./i18n";
 import { createTheme } from "./theme";
-import Main from "component/Main";
 
 export default function App() {
   const [mode] = useAtom(colorAtom);

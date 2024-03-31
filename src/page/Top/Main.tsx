@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Box, Fade } from "@mui/material";
 import { useAtom } from "jotai";
 import { colorAtom } from "globalstate/theme";
+import Top from "page/Top/Top";
 import { Progress } from "component/Progress";
-import Top from "component/Top";
 
 export default function Main() {
   const [mode, setMode] = useAtom(colorAtom);

@@ -26,6 +26,7 @@ import { useCounter } from "hook/Counter";
 import i18next from "i18next";
 import Counter from "component/Counter";
 import History from "component/History";
+import LanguageChangeButton from "component/LanguageChangeButton";
 import StyledCardContents from "component/ListCard";
 import ModeSwitch from "component/ModeSwitch";
 import ReleaseNote from "component/ReleaseNote";
@@ -113,14 +114,10 @@ export default function Top({ mode, onChangeMode }: Props) {
           </Box>
           {!isMobile && (
             <>
-              <Tooltip
-                title={t("button.change_lang")}
+              <LanguageChangeButton
                 sx={{ position: "absolute", right: 80, top: 14 }}
-              >
-                <IconButton onClick={handleChangeLang}>
-                  <GTranslateIcon />
-                </IconButton>
-              </Tooltip>
+                onChangeLang={handleChangeLang}
+              />
               <ModeSwitch
                 sx={{ position: "absolute", right: 16, top: 16 }}
                 checked={mode === "dark"}
@@ -354,11 +351,7 @@ export default function Top({ mode, onChangeMode }: Props) {
         {isMobile && (
           <>
             <Grid item xs={12} textAlign="right" mt={2}>
-              <Tooltip title={t("button.change_lang")}>
-                <IconButton onClick={handleChangeLang}>
-                  <GTranslateIcon />
-                </IconButton>
-              </Tooltip>
+              <LanguageChangeButton onChangeLang={handleChangeLang} />
               <ModeSwitch checked={mode === "dark"} onClick={onChangeMode} />
             </Grid>
           </>
