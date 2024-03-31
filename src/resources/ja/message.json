@@ -17,7 +17,12 @@
 		"programming": "プログラミング言語",
 		"database": "データベース",
 		"infra": "インフラ技術",
-		"qualification": "資格",
-		"other": "その他"
+		"qualification": "所持資格",
+		"other": "その他",
+		"love": "好き"
+	},
+	"message": {
+		"welcome": "ごましおきなこのポートフォリオヘようこそ！",
+		"used_language": "使用言語割合"
 	}
 }

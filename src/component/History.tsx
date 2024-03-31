@@ -7,12 +7,13 @@ import TimelineOppositeContent, {
   timelineOppositeContentClasses,
 } from "@mui/lab/TimelineOppositeContent";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import { Typography } from "@mui/material";
 
 export default function History() {
   return (
     <Timeline
       sx={{
+        p: 0,
+        m: 0,
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: 0.2,
         },
@@ -20,7 +21,7 @@ export default function History() {
     >
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          1994年
+          1994
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
@@ -30,23 +31,17 @@ export default function History() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          2017年 3月
+          2017/3
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>
-          秋田県立大学 システム科学技術学部 電子情報システム学科 卒業
-          <br />
-          <Typography variant="caption">
-            現在は「情報工学科」に名称変更されています
-          </Typography>
-        </TimelineContent>
+        <TimelineContent>秋田県立大学 卒業</TimelineContent>
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          2017年 4月
+          2017/4
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot />
@@ -58,7 +53,7 @@ export default function History() {
       </TimelineItem>
       <TimelineItem>
         <TimelineOppositeContent color="text.secondary">
-          2019年 1月
+          2019/1
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="success" />

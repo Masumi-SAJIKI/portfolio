@@ -1,24 +1,27 @@
 import { ReactNode } from "react";
-import { Box, Card, Palette, PaletteColor } from "@mui/material";
+import { Box, Card, Palette, PaletteColor, SxProps } from "@mui/material";
 
 type Props = {
   children: ReactNode;
   width?: string;
   height?: string;
   color?: keyof Palette;
+  sx?: SxProps;
 };
 
-export default function SkillCard({
+export default function WindowCard({
   children,
   width = "300px",
   height,
   color = "secondary",
+  sx,
 }: Props) {
   return (
     <Box
       sx={{
         position: "relative",
         width,
+        ...sx,
       }}
     >
       <Box

@@ -18,6 +18,11 @@
 		"data": "data",
 		"infra": "infrastructure",
 		"qualification": "qualification",
-		"other": "other"
+		"other": "other",
+		"love": "Love"
+	},
+	"message": {
+		"welcome": "Welcome to my portfolio site!",
+		"used_language": "Used language"
 	}
 }

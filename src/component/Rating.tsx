@@ -12,7 +12,7 @@ export default function Rating({
   width?: string;
 }) {
   return (
-    <Box display="flex" marginBlock={1} alignItems="center">
+    <Box display="flex" marginBlock={1} alignItems="center" ml={2}>
       <Typography component="legend" minWidth={width}>
         {legend}
       </Typography>
