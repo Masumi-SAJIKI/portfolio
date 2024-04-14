@@ -234,12 +234,23 @@ export default function Top({ mode, onChangeMode }: Props) {
             </WindowCard>
           </Grid>
         </Grid>
+        <Title title="そのほか" />
+        <Grid item xs={12} mb={4}>
+          <Typography variant="body1" component="div">
+            <Link href="qrcode">2次元バーコード作成</Link>
+          </Typography>
+        </Grid>
         <Title title={t("subtitle.release")} />
         <Grid item xs={12} mb={4}>
           <WindowCard height="120px" width="100%">
             <CardContent>
               <ReleaseNote
                 notes={[
+                  {
+                    ver: "0.5.0",
+                    date: new Date("2024-04-14"),
+                    note: "2次元バーコード作成画面をひっそり追加",
+                  },
                   {
                     ver: "0.5.0",
                     date: new Date("2024-03-31"),

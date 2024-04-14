@@ -37,6 +37,7 @@ export default defineConfig({
       hook: path.resolve(__dirname, "src/hook"),
       page: path.resolve(__dirname, "src/page"),
       resources: path.resolve(__dirname, "src/resources"),
+      routes: path.resolve(__dirname, "src/routes"),
       types: path.resolve(__dirname, "src/types"),
     },
   },

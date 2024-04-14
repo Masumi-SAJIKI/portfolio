@@ -1,7 +1,7 @@
 {
   "name": "gomashio-homepage",
   "private": true,
-  "version": "0.5.1",
+  "version": "0.6.0",
   "type": "module",
   "volta": {
     "node": "20.12.0"
@@ -27,12 +27,18 @@
     "i18next-browser-languagedetector": "^7.2.0",
     "i18next-http-backend": "^2.5.0",
     "jotai": "^2.7.1",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
+    "qrcode": "^1.5.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-i18next": "^14.1.0"
+    "react-i18next": "^14.1.0",
+    "react-router-dom": "^6.22.3",
+    "sort-by": "^1.2.0"
   },
   "devDependencies": {
     "@types/node": "^20.11.30",
+    "@types/qrcode": "^1.5.5",
     "@types/react": "^18.2.66",
     "@types/react-dom": "^18.2.22",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
