@@ -4,9 +4,11 @@ import { useAtom } from "jotai";
 import { colorAtom } from "globalstate/theme";
 import Top from "page/Top/Top";
 import { Progress } from "component/Progress";
+import QRCodeGenerator from "component/QRCodeGenerator";
 
 export default function Main() {
   const [mode, setMode] = useAtom(colorAtom);
+  const [isDev, setIsDev] = useState(false);
   const [show, setShow] = useState(false);
   const [progress, setProgress] = useState(0);
 
@@ -38,9 +40,11 @@ export default function Main() {
           <Top
             mode={mode}
             onChangeMode={() => setMode(mode === "light" ? "dark" : "light")}
+            onChangeDev={() => setIsDev(true)}
           />
         </Box>
       </Fade>
+      {isDev && <QRCodeGenerator />}
     </Box>
   );
 }

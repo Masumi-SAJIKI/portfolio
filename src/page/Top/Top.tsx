@@ -30,10 +30,11 @@ import WindowCard from "component/WindowCard";
 interface Props {
   mode: "light" | "dark";
   onChangeMode: () => void;
+  onChangeDev: (isDev: boolean) => void;
 }
 
-export default function Top({ mode, onChangeMode }: Props) {
-  const { t } = useTranslation();
+export default function Top({ mode, onChangeMode, onChangeDev }: Props) {
+  const { t } = useTranslation("ns2");
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const count = useCounter();
@@ -289,13 +290,11 @@ export default function Top({ mode, onChangeMode }: Props) {
             アクセスカウンター
           </Typography>
           <Counter count={count} />
-          <Typography variant="caption" component="div" color="GrayText">
-            リアルタイムでカウントしています。
-            {/* <br />
-            キリ番を踏んだらBBSにぜひ記念書き込みお願いします！ */}
-          </Typography>
         </Grid>
         <Grid item xs={12} textAlign="center" mt={3}>
+          <div style={{ color: "#f7ede2" }} onClick={() => onChangeDev}>
+            開発者モード
+          </div>
           <Typography variant="caption">
             Copyright © 2014 ごましおきなこ All Rights Reserved.
           </Typography>
