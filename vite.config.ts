@@ -10,7 +10,6 @@ export default defineConfig({
       jsxImportSource: "@emotion/react",
     }),
   ],
-  base: "/portfolio/",
   define: {
     APP_VERSION: JSON.stringify(process.env.npm_package_version),
   },
