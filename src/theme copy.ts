@@ -11,10 +11,10 @@ const lightTheme = createBase({
   palette: {
     mode: "light",
     background: {
-      default: "#fcfcfc",
+      default: "#f7ede2",
     },
     primary: {
-      main: "#e2345a",
+      main: "#e76f51",
     },
     secondary: {
       main: "#f6bd60",
@@ -27,7 +27,7 @@ const lightTheme = createBase({
     MuiPaper: {
       styleOverrides: {
         root: {
-          backgroundColor: "#ffffff",
+          backgroundColor: "#FCF9F6",
         },
       },
     },

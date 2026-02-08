@@ -25,7 +25,7 @@ export default function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/portfolio">
+    <BrowserRouter>
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <Main />

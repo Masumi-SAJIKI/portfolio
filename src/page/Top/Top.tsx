@@ -30,7 +30,7 @@ import WindowCard from "component/WindowCard";
 interface Props {
   mode: "light" | "dark";
   onChangeMode: () => void;
-  onChangeDev: (isDev: boolean) => void;
+  onChangeDev: () => void;
 }
 
 export default function Top({ mode, onChangeMode, onChangeDev }: Props) {
@@ -235,12 +235,6 @@ export default function Top({ mode, onChangeMode, onChangeDev }: Props) {
             </WindowCard>
           </Grid>
         </Grid>
-        <Title title="そのほか" />
-        <Grid item xs={12} mb={4}>
-          <Typography variant="body1" component="div">
-            <Link href="qrcode">2次元バーコード作成</Link>
-          </Typography>
-        </Grid>
         <Title title={t("subtitle.release")} />
         <Grid item xs={12} mb={4}>
           <WindowCard height="120px" width="100%">
@@ -292,7 +286,7 @@ export default function Top({ mode, onChangeMode, onChangeDev }: Props) {
           <Counter count={count} />
         </Grid>
         <Grid item xs={12} textAlign="center" mt={3}>
-          <div style={{ color: "#f7ede2" }} onClick={() => onChangeDev}>
+          <div style={{ color: "#f7ede2" }} onClick={onChangeDev}>
             開発者モード
           </div>
           <Typography variant="caption">
