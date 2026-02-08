@@ -32,15 +32,15 @@ const lightTheme = createBase({
       },
     },
   },
-  typography: {
-    fontFamily: [
-      "Kosugi Maru",
-      '"Noto Sans JP"',
-      '"Helvetica"',
-      "Arial",
-      "sans-serif",
-    ].join(","),
-  },
+  // typography: {
+  //   fontFamily: [
+  //     "Kosugi Maru",
+  //     '"Noto Sans JP"',
+  //     '"Helvetica"',
+  //     "Arial",
+  //     "sans-serif",
+  //   ].join(","),
+  // },
 });
 
 const darkTheme = createBase({
@@ -68,13 +68,13 @@ const darkTheme = createBase({
       },
     },
   },
-  typography: {
-    fontFamily: [
-      "Kosugi Maru",
-      '"Noto Sans JP"',
-      '"Helvetica"',
-      "Arial",
-      "sans-serif",
-    ].join(","),
-  },
+  // typography: {
+  //   fontFamily: [
+  //     "Kosugi Maru",
+  //     '"Noto Sans JP"',
+  //     '"Helvetica"',
+  //     "Arial",
+  //     "sans-serif",
+  //   ].join(","),
+  // },
 });

@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import { Box, Container, Fade, styled } from "@mui/material";
 import background from "assets/background.jpg";
-import Top from "page/Top/Top2";
+import Top from "page/Top/Top3";
 import { Progress } from "component/Progress";
 import QRCodeGenerator from "component/QRCodeGenerator";
+import { useAtom } from "jotai";
+import { colorAtom } from "globalstate/theme";
 
 const DesktopBackground = styled("div")({
   backgroundImage: `url(${background})`,
@@ -24,7 +26,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 export default function Main() {
-  // const [mode, setMode] = useAtom(colorAtom);
+  const [mode, setMode] = useAtom(colorAtom);
   const [isDev] = useState(false);
   const [show, setShow] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -47,7 +49,8 @@ export default function Main() {
 
   return (
     <Box>
-      <DesktopBackground>
+      <Top />
+      {/* <DesktopBackground>
         <StyledContainer maxWidth="md">
           <Box>
             {!show && (
@@ -58,18 +61,18 @@ export default function Main() {
             <Fade in={show}>
               <Box>
                 <Top
-                // mode={mode}
-                // onChangeMode={() =>
-                //   setMode(mode === "light" ? "dark" : "light")
-                // }
-                // onChangeDev={() => setIsDev(true)}
+                  mode={mode}
+                  onChangeMode={() =>
+                    setMode(mode === "light" ? "dark" : "light")
+                  }
+                  onChangeDev={() => {}}
                 />
               </Box>
             </Fade>
             {isDev && <QRCodeGenerator />}
           </Box>
         </StyledContainer>
-      </DesktopBackground>
+      </DesktopBackground> */}
     </Box>
   );
 }

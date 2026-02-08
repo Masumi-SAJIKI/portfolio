@@ -1,33 +1,33 @@
 interface Resources {
-  "message": {
-    "button": {
-      "change_lang": "to English"
-    },
-    "title": {
-      "author": "ごましおきなこの",
-      "portfolio": "ポートフォリオ"
-    },
-    "subtitle": {
-      "about_site": "このサイトについて",
-      "about_author": "自己紹介",
-      "contact": "お問い合わせ",
-      "skill": "スキル",
-      "release": "更新履歴"
-    },
-    "skill": {
-      "programming": "プログラミング言語",
-      "database": "データベース",
-      "infra": "インフラ技術",
-      "qualification": "所持資格",
-      "other": "その他",
-      "love": "好き"
-    },
-    "message": {
-      "welcome": "ごましおきなこのポートフォリオヘようこそ！",
-      "used_language": "使用言語割合"
-    },
-    "author": "ごましおきなこ<br/><br/>新潟で生まれ、山形と秋田で育ち、仙台で生きているエンジニアです。<br/>主にReact、Laravelを利用したシステムの開発・改修を行なっています。"
-  }
+  message: {
+    button: {
+      change_lang: "to English";
+    };
+    title: {
+      author: "ごましおきなこの";
+      portfolio: "ポートフォリオ";
+    };
+    subtitle: {
+      about_site: "このサイトについて";
+      about_author: "自己紹介";
+      contact: "お問い合わせ";
+      skill: "スキル";
+      release: "更新履歴";
+    };
+    skill: {
+      programming: "プログラミング言語";
+      database: "データベース";
+      infra: "インフラ技術";
+      qualification: "所持資格";
+      other: "その他";
+      love: "好き";
+    };
+    message: {
+      welcome: "ごましおきなこのポートフォリオヘようこそ！";
+      used_language: "使用言語割合";
+    };
+    author: "ごましおきなこ<br/><br/>新潟で生まれ、山形と秋田で育ち、仙台で生きているエンジニアです。<br/>主にReact、Laravelを利用したシステムの開発・改修を行なっています。";
+  };
 }
 
 export default Resources;
