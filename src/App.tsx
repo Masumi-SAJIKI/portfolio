@@ -1,16 +1,10 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { BrowserRouter } from "react-router-dom";
-import { CssBaseline, ThemeProvider } from "@mui/material";
-import { useAtom } from "jotai";
+import { CssBaseline } from "@mui/material";
 import { postCounter } from "api";
-import { colorAtom } from "globalstate/theme";
 import Main from "page/Top/Main";
-import "./i18n";
-import { createTheme } from "./theme";
 
 export default function App() {
-  const [mode] = useAtom(colorAtom);
-  const theme = useMemo(() => createTheme(mode), [mode]);
   const accessRef = useRef(false);
 
   useEffect(() => {
@@ -26,10 +20,8 @@ export default function App() {
 
   return (
     <BrowserRouter>
-      <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <Main />
-      </ThemeProvider>
+      <CssBaseline />
+      <Main />
     </BrowserRouter>
   );
 }
